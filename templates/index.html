@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Compass</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --maroon:      #6b1e2e;
+    --maroon-deep: #4a1220;
+    --maroon-mid:  #7d2438;
+    --gold:        #c9967a;
+    --cream:       #f5e8e4;
+    --cream-dim:   rgba(245,232,228,0.65);
+    --text-muted:  rgba(245,232,228,0.5);
+    --dark:        #1a0a0e;
+    --darker:      #110608;
+    --border:      rgba(255,255,255,0.08);
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--darker); color: var(--cream); overflow-x: hidden; }
+
+  .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.85s ease, transform 0.85s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* HERO */
+  #hero {
+    position: relative; min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; overflow: hidden;
+    background: radial-gradient(ellipse at 52% 38%, #c9a09a 0%, #a86860 30%, #7d2438 60%, #4a1220 100%);
+  }
+  #hero .vignette {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 35%, rgba(74,18,32,0.55) 100%);
+    pointer-events: none;
+  }
+  .nav {
+    position: absolute; top: 0; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 40px; z-index: 10;
+  }
+  .nav-logo img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+  .nav-btn {
+    background: transparent; border: 1.5px solid rgba(245,232,228,0.55);
+    color: var(--cream); padding: 9px 22px; border-radius: 24px;
+    font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500;
+    letter-spacing: 1px; text-transform: uppercase; cursor: pointer;
+    transition: background 0.2s, border-color 0.2s; text-decoration: none; display: inline-block;
+  }
+  .nav-btn:hover { background: rgba(245,232,228,0.1); border-color: var(--cream); }
+  .hero-content {
+    position: relative; z-index: 5;
+    display: flex; flex-direction: column; align-items: center;
+    animation: heroFadeUp 1.1s ease both;
+  }
+  @keyframes heroFadeUp { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-logo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 24px; filter: drop-shadow(0 6px 24px rgba(74,18,32,0.5)); }
+  .hero-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(72px, 11vw, 130px); color: white; line-height: 0.9; letter-spacing: -2px; margin-bottom: 4px; }
+  .hero-title-italic { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; font-size: clamp(72px, 11vw, 130px); color: white; line-height: 0.95; letter-spacing: -2px; margin-bottom: 24px; display: block; }
+  .hero-subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 26px); font-weight: 400; color: var(--cream); margin-bottom: 14px; }
+  .hero-tagline { font-size: 16px; font-weight: 300; color: var(--cream-dim); line-height: 1.65; margin-bottom: 40px; max-width: 480px; }
+  .hero-btn {
+    background: transparent; border: 1.5px solid rgba(245,232,228,0.6); color: var(--cream);
+    padding: 14px 36px; border-radius: 32px; font-family: 'DM Sans', sans-serif;
+    font-size: 12px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
+    cursor: pointer; transition: background 0.25s, border-color 0.25s, transform 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .hero-btn:hover { background: rgba(245,232,228,0.12); border-color: var(--cream); transform: translateY(-2px); }
+
+  /* OFFER */
+  #offer { background: var(--maroon-deep); padding: 100px 64px; position: relative; }
+  #offer .corner-logo { position: absolute; top: 32px; right: 40px; width: 40px; height: 40px; border-radius: 50%; object-fit: cover; opacity: 0.7; }
+  .section-tag { display: flex; align-items: center; gap: 14px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+  .section-tag::before { content: ''; display: block; height: 1px; background: var(--gold); opacity: 0.6; width: 40px; }
+  .section-heading { font-family: 'Playfair Display', serif; font-size: clamp(38px, 5vw, 62px); font-weight: 700; color: var(--cream); line-height: 1.1; margin-bottom: 16px; }
+  .section-heading em { font-style: italic; font-weight: 400; color: var(--gold); }
+  .section-sub { font-size: 15px; color: var(--text-muted); max-width: 420px; line-height: 1.75; margin-bottom: 60px; }
+  .cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .feature-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(245,232,228,0.15); border-radius: 18px; padding: 28px 22px 32px; transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease; }
+  .feature-card:hover { transform: translateY(-6px); border-color: rgba(201,150,122,0.4); background: rgba(255,255,255,0.07); }
+  .card-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(100,30,50,0.6); border: 1px solid rgba(201,150,122,0.25); display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px; }
+  .card-title { font-size: 16px; font-weight: 600; color: var(--cream); margin-bottom: 10px; }
+  .card-desc { font-size: 13px; color: var(--text-muted); line-height: 1.75; }
+
+  /* HOW IT WORKS */
+  #howit { background: var(--maroon); padding: 100px 64px; position: relative; }
+  #howit .corner-logo { position: absolute; top: 32px; left: 40px; width: 40px; height: 40px; border-radius: 50%; object-fit: cover; opacity: 0.7; }
+  #howit .section-tag, #howit .section-heading, #howit .section-sub { text-align: center; }
+  #howit .section-tag { justify-content: center; }
+  #howit .section-tag::before, #howit .section-tag::after { display: block; width: 40px; }
+  #howit .section-sub { margin: 0 auto 72px; }
+  .steps-row { display: grid; grid-template-columns: repeat(3, 1fr); position: relative; gap: 0; }
+  .steps-row::before { content: ''; position: absolute; top: 40px; left: calc(16.6% + 40px); right: calc(16.6% + 40px); height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.45; pointer-events: none; }
+  .step { text-align: center; padding: 0 40px; }
+  .step-circle { width: 80px; height: 80px; border-radius: 50%; border: 1px solid rgba(201,150,122,0.55); display: flex; align-items: center; justify-content: center; margin: 0 auto 28px; font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 300; color: var(--cream-dim); background: var(--maroon); position: relative; z-index: 1; transition: box-shadow 0.3s, background 0.3s; }
+  .step:hover .step-circle { box-shadow: 0 0 28px rgba(201,150,122,0.25); background: rgba(201,150,122,0.08); }
+  .step h4 { font-size: 17px; font-weight: 700; color: var(--cream); margin-bottom: 12px; }
+  .step p { font-size: 13.5px; font-style: italic; color: var(--text-muted); line-height: 1.75; max-width: 210px; margin: 0 auto; }
+
+  /* TRUST */
+  #trust { background: var(--maroon); padding: 0 64px 100px; }
+  .trust-panel { background: linear-gradient(160deg, #1a0a0e 0%, #110608 100%); border-radius: 32px; overflow: hidden; }
+  .trust-top { padding: 60px 64px; display: flex; align-items: center; justify-content: space-between; gap: 48px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .trust-text h2 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3vw, 42px); font-weight: 700; color: var(--cream); line-height: 1.2; margin-bottom: 16px; }
+  .trust-text h2 em { font-style: italic; font-weight: 400; color: var(--gold); }
+  .trust-text p { font-size: 14px; color: var(--text-muted); max-width: 360px; line-height: 1.8; }
+  .trust-badges { display: flex; gap: 16px; flex-shrink: 0; }
+  .trust-badge { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 28px 32px; text-align: center; min-width: 140px; }
+  .badge-num { font-family: 'Playfair Display', serif; font-size: 46px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 8px; }
+  .badge-label { font-size: 11px; color: var(--text-muted); line-height: 1.5; }
+  .trust-stats { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .trust-stat { padding: 48px 40px; text-align: center; border-right: 1px solid rgba(255,255,255,0.07); transition: background 0.3s; }
+  .trust-stat:last-child { border-right: none; }
+  .trust-stat:hover { background: rgba(255,255,255,0.02); }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 10px; }
+  .stat-label { font-size: 12px; color: var(--text-muted); }
+
+  /* CTA */
+  #cta { position: relative; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 64px 120px; overflow: hidden; background: #5a1624; }
+  #cta .vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 30%, rgba(60,10,20,0.5) 100%); pointer-events: none; }
+  .cta-inner { position: relative; z-index: 5; max-width: 720px; }
+  .cta-tag { display: inline-flex; align-items: center; gap: 16px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 32px; }
+  .cta-tag::before, .cta-tag::after { content: ''; display: block; width: 48px; height: 1px; background: var(--gold); opacity: 0.6; }
+  .cta-heading { font-family: 'Playfair Display', serif; font-size: clamp(42px, 6vw, 78px); font-weight: 800; color: var(--cream); line-height: 1.05; margin-bottom: 24px; }
+  .cta-heading em { font-style: italic; font-weight: 700; color: var(--gold); }
+  .cta-sub { font-size: 16px; color: var(--cream-dim); line-height: 1.75; margin-bottom: 48px; }
+  .cta-btn { background: transparent; border: 1.5px solid rgba(245,232,228,0.55); color: var(--cream); padding: 16px 44px; border-radius: 36px; font-size: 12px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; transition: background 0.25s, border-color 0.25s, transform 0.2s; text-decoration: none; display: inline-block; }
+  .cta-btn:hover { background: rgba(245,232,228,0.1); border-color: var(--cream); transform: translateY(-3px); }
+  .footer { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); z-index: 5; }
+  .footer-left { display: flex; align-items: center; gap: 12px; }
+  .footer-logo-img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; opacity: 0.85; }
+  .footer-brand { font-family: 'Playfair Display', serif; font-size: 15px; color: rgba(245,232,228,0.6); font-style: italic; }
+  .footer-brand em { color: rgba(245,232,228,0.85); }
+  .footer-right { font-size: 11px; color: rgba(245,232,228,0.3); text-align: right; line-height: 1.7; }
+  .footer-right a { color: rgba(245,232,228,0.45); text-decoration: none; transition: color 0.2s; }
+  .footer-right a:hover { color: rgba(245,232,228,0.75); }
+</style>
+</head>
+<body>
+
+<section id="hero">
+  <div class="vignette"></div>
+  <nav class="nav">
+    <div class="nav-logo">
+      <img src="{{ url_for('static', filename='images/logo-transparent.png') }}" alt="Career Compass Logo">
+    </div>
+    <a href="{{ url_for('login') }}" class="nav-btn">Sign Up / Login</a>
+  </nav>
+  <div class="hero-content">
+    <img src="{{ url_for('static', filename='images/logo-transparent.png') }}" alt="CC" class="hero-logo">
+    <h1 class="hero-title">Career</h1>
+    <span class="hero-title-italic">Compass</span>
+    <p class="hero-subtitle">AI-Powered Career Guidance</p>
+    <p class="hero-tagline">Find your direction. Navigate your future.<br>Personalised guidance to help you land the career you deserve.</p>
+    <a href="{{ url_for('login') }}" class="hero-btn">Get Started Now</a>
+  </div>
+</section>
+
+<section id="offer">
+  <img src="{{ url_for('static', filename='images/logo-transparent.png') }}" alt="" class="corner-logo">
+  <div class="section-tag reveal">What we offer</div>
+  <h2 class="section-heading reveal reveal-delay-1">Built to guide <em>every step</em></h2>
+  <p class="section-sub reveal reveal-delay-2">Four powerful tools working together to give you clarity on your career path.</p>
+  <div class="cards-grid">
+    <div class="feature-card reveal reveal-delay-1"><div class="card-icon">📄</div><div class="card-title">Resume Analysis</div><p class="card-desc">Deep scan of your resume against real job listings. Know exactly where you stand before you apply.</p></div>
+    <div class="feature-card reveal reveal-delay-2"><div class="card-icon">🎯</div><div class="card-title">Career Matching</div><p class="card-desc">See exactly how well you match any job description. Comes with a personalised gap analysis.</p></div>
+    <div class="feature-card reveal reveal-delay-3"><div class="card-icon">🔀</div><div class="card-title">Job Switch Assistance</div><p class="card-desc">Thinking of switching fields? We map your transferable skills to entirely new career paths.</p></div>
+    <div class="feature-card reveal reveal-delay-4"><div class="card-icon">💬</div><div class="card-title">Guidance Chatbot</div><p class="card-desc">Ask anything. Get honest, data-backed career advice from an AI that knows the job market & you.</p></div>
+  </div>
+</section>
+
+<section id="howit">
+  <img src="{{ url_for('static', filename='images/logo-transparent.png') }}" alt="" class="corner-logo">
+  <div class="section-tag reveal">How it works</div>
+  <h2 class="section-heading reveal reveal-delay-1">Three steps to <em>clarity</em></h2>
+  <p class="section-sub reveal reveal-delay-2">No complications. Just a clear, personalised path forward.</p>
+  <div class="steps-row">
+    <div class="step reveal reveal-delay-1"><div class="step-circle">I</div><h4>Upload your resume</h4><p>Drop your CV and let our system extract your skills and experience.</p></div>
+    <div class="step reveal reveal-delay-2"><div class="step-circle">II</div><h4>Tell us your goals</h4><p>Where do you want to be? We tailor everything to your target role.</p></div>
+    <div class="step reveal reveal-delay-3"><div class="step-circle">III</div><h4>Get your roadmap</h4><p>Receive a personalised career plan with actionable next steps.</p></div>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="trust-panel reveal">
+    <div class="trust-top">
+      <div class="trust-text">
+        <h2>Built on <em>real data,</em><br>not guesswork</h2>
+        <p>Career Compass is trained on thousands of real job listings, industry transitions, and hiring patterns — so the guidance you get is grounded in how the job market actually works.</p>
+      </div>
+      <div class="trust-badges">
+        <div class="trust-badge"><div class="badge-num">87%</div><div class="badge-label">Match accuracy<br>rate</div></div>
+        <div class="trust-badge"><div class="badge-num">120+</div><div class="badge-label">Career paths<br>covered</div></div>
+      </div>
+    </div>
+    <div class="trust-stats">
+      <div class="trust-stat"><div class="stat-num">50K+</div><div class="stat-label">Job listings analysed</div></div>
+      <div class="trust-stat"><div class="stat-num">120+</div><div class="stat-label">Career paths covered</div></div>
+      <div class="trust-stat"><div class="stat-num">87%</div><div class="stat-label">Job match accuracy</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="vignette"></div>
+  <div class="cta-inner reveal">
+    <div class="cta-tag">Your next step</div>
+    <h2 class="cta-heading">Your career doesn't<br>find itself. <em>You do.</em></h2>
+    <p class="cta-sub">You've seen what Career Compass can do.<br>Now let it work for you.</p>
+    <a href="{{ url_for('login') }}" class="cta-btn">Get Started Now</a>
+  </div>
+  <div class="footer">
+    <div class="footer-left">
+      <img src="{{ url_for('static', filename='images/logo-transparent.png') }}" alt="CC" class="footer-logo-img">
+      <span class="footer-brand">Career <em>Compass</em></span>
+    </div>
+    <div class="footer-right">
+      © 2025 Career Compass. All rights reserved.
+    </div>
+  </div>
+</section>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

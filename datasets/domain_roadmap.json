@@ -1,0 +1,169 @@
+{
+  "computers and electronics": [
+    "Take advanced programming courses (e.g. MIT OpenCourseWare 6.006)",
+    "Practice system design on platforms like Excalidraw or LeetCode Design",
+    "Build and deploy 2–3 real-world software projects on GitHub",
+    "Study computer architecture and operating systems fundamentals"
+  ],
+  "mathematics": [
+    "Complete a statistics and probability course (Khan Academy or Coursera)",
+    "Practice data analysis with Python (pandas, numpy) on Kaggle datasets",
+    "Work through coding challenges on HackerRank focusing on algorithms",
+    "Study linear algebra (3Blue1Brown Essence of Linear Algebra series)"
+  ],
+  "engineering and technology": [
+    "Learn system architecture and distributed systems concepts",
+    "Study cloud computing fundamentals — AWS/GCP free-tier projects",
+    "Build and deploy scalable applications using Docker and Kubernetes",
+    "Read 'Designing Data-Intensive Applications' by Martin Kleppmann"
+  ],
+  "design": [
+    "Learn UI/UX principles through Google's UX Design Certificate (Coursera)",
+    "Practice interface design with Figma using real briefs from Dribbble",
+    "Study accessibility standards (WCAG 2.1) and responsive design",
+    "Build a 5-piece portfolio of original UI/UX case studies"
+  ],
+  "sales and marketing": [
+    "Take Google's Digital Marketing & E-commerce Certificate",
+    "Learn branding and positioning through HubSpot Academy (free)",
+    "Study customer psychology and behaviour with 'Influence' by Cialdini",
+    "Practice writing conversion-focused copy for mock landing pages"
+  ],
+  "telecommunications": [
+    "Study networking fundamentals with CompTIA Network+ materials",
+    "Learn TCP/IP, DNS, HTTP and communication protocols in depth",
+    "Set up a home lab using Cisco Packet Tracer (free)",
+    "Practice network troubleshooting with Wireshark"
+  ],
+  "english language": [
+    "Improve technical writing through the Google Technical Writing course (free)",
+    "Practice professional communication with Toastmasters or similar groups",
+    "Read and summarise one technical article per day to build vocabulary",
+    "Take a business writing course on Coursera or LinkedIn Learning"
+  ],
+  "physics": [
+    "Review classical mechanics and electromagnetism (MIT OCW 8.01/8.02)",
+    "Work through applied physics problems relevant to your target role",
+    "Study materials science or thermodynamics depending on the specialisation"
+  ],
+  "chemistry": [
+    "Review general chemistry fundamentals (Khan Academy Chemistry)",
+    "Study the specific chemical domain relevant to the target career",
+    "Complete a lab safety and instrumentation course"
+  ],
+  "biology": [
+    "Take an introductory biology course (Coursera — Duke or MIT)",
+    "Study the biological sub-domain relevant to the target career (e.g. genetics, ecology)",
+    "Practise interpreting biological data and research papers"
+  ],
+  "medicine and dentistry": [
+    "Take an anatomy and physiology course as a foundation",
+    "Shadow or volunteer in a relevant clinical environment",
+    "Study medical terminology through a structured online course"
+  ],
+  "psychology": [
+    "Complete an introduction to psychology course (Yale 'The Science of Well-Being' on Coursera)",
+    "Study cognitive and behavioural psychology relevant to your target role",
+    "Read foundational texts such as 'Thinking, Fast and Slow' by Kahneman"
+  ],
+  "sociology and anthropology": [
+    "Study social research methods and how to interpret sociological data",
+    "Take an introductory sociology course on edX or Coursera",
+    "Read contemporary case studies relevant to your target field"
+  ],
+  "economics and accounting": [
+    "Complete a financial accounting course (Coursera — Wharton)",
+    "Study micro and macroeconomics fundamentals",
+    "Practice reading financial statements and annual reports"
+  ],
+  "law and government": [
+    "Take an introductory business law or regulatory compliance course",
+    "Study the specific regulatory framework relevant to your target industry",
+    "Read government policy documents and case law summaries in your domain"
+  ],
+  "customer and personal service": [
+    "Practice active listening and empathy through customer-facing volunteer work",
+    "Take a customer experience (CX) fundamentals course on LinkedIn Learning",
+    "Study conflict resolution and de-escalation techniques"
+  ],
+  "administration and management": [
+    "Take a project management course and earn a CAPM or PMP credential",
+    "Study organisational behaviour and leadership fundamentals",
+    "Practice using project management tools: Jira, Asana, Notion"
+  ],
+  "clerical": [
+    "Improve typing speed and accuracy (goal: 60+ WPM)",
+    "Learn Microsoft Office or Google Workspace to an advanced level",
+    "Study records management and office administration best practices"
+  ],
+  "personnel and human resources": [
+    "Study HR fundamentals through SHRM learning resources",
+    "Learn talent acquisition and performance management frameworks",
+    "Take an employment law overview course relevant to your jurisdiction"
+  ],
+  "education and training": [
+    "Study instructional design principles (ADDIE or SAM model)",
+    "Practice creating structured lesson plans or training materials",
+    "Take a course on adult learning theory (andragogy)"
+  ],
+  "production and processing": [
+    "Study lean manufacturing and Six Sigma fundamentals",
+    "Learn about supply chain and operations management (Coursera — Rutgers)",
+    "Get familiar with ERP systems such as SAP or Oracle"
+  ],
+  "mechanical": [
+    "Review statics, dynamics and materials science fundamentals",
+    "Learn CAD tools such as SolidWorks or AutoCAD (free student licences available)",
+    "Study manufacturing processes relevant to the target role"
+  ],
+  "geography": [
+    "Take an introductory GIS course using QGIS (free and open source)",
+    "Study cartography and spatial data analysis fundamentals",
+    "Complete projects using open geographic datasets (OpenStreetMap, etc.)"
+  ],
+  "history and archeology": [
+    "Study research methodology for historical and archival work",
+    "Take relevant history or cultural heritage courses on edX",
+    "Practice writing well-sourced historical analysis or reports"
+  ],
+  "fine arts": [
+    "Develop a consistent creative practice in your chosen medium",
+    "Study art history and contemporary movements relevant to your field",
+    "Build a professional portfolio and seek critique from peers"
+  ],
+  "food production": [
+    "Study food science and safety fundamentals (ServSafe or equivalent)",
+    "Learn about supply chain management specific to the food industry",
+    "Take a nutrition or culinary arts course depending on the specialisation"
+  ],
+  "building and construction": [
+    "Study construction management fundamentals (Coursera — Columbia)",
+    "Learn to read architectural and engineering blueprints",
+    "Familiarise yourself with building codes and safety regulations in your region"
+  ],
+  "transportation": [
+    "Study logistics and supply chain management fundamentals",
+    "Learn regulatory requirements relevant to your mode of transport",
+    "Take a course in fleet management or route optimisation"
+  ],
+  "public safety and security": [
+    "Study risk assessment and emergency management frameworks",
+    "Take a workplace health and safety (WHS/OSHA) certification course",
+    "Learn crisis communication and incident response protocols"
+  ],
+  "communications and media": [
+    "Take a journalism or media production course on Coursera or Skillshare",
+    "Study audience analysis and content strategy",
+    "Build a portfolio of published articles, videos, or podcasts"
+  ],
+  "philosophy and theology": [
+    "Study ethical reasoning and applied ethics relevant to your field",
+    "Take an introductory philosophy course (Yale 'Death' or MIT OCW)",
+    "Practice structured argumentation and critical analysis writing"
+  ],
+  "foreign language": [
+    "Use Duolingo or Pimsleur for daily vocabulary and grammar practice",
+    "Find a conversation partner through iTalki or Tandem",
+    "Immerse yourself by consuming media (films, podcasts, books) in the target language"
+  ]
+}

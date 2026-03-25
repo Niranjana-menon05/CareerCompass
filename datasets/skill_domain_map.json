@@ -1,0 +1,633 @@
+{
+  "python": [
+    "computers and electronics"
+  ],
+  "java": [
+    "computers and electronics"
+  ],
+  "c++": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "c#": [
+    "computers and electronics"
+  ],
+  "r": [
+    "mathematics"
+  ],
+  "scala": [
+    "computers and electronics"
+  ],
+  "go": [
+    "computers and electronics"
+  ],
+  "rust": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "swift": [
+    "computers and electronics"
+  ],
+  "kotlin": [
+    "computers and electronics"
+  ],
+  "php": [
+    "computers and electronics"
+  ],
+  "ruby": [
+    "computers and electronics"
+  ],
+  "typescript": [
+    "computers and electronics"
+  ],
+  "matlab": [
+    "mathematics",
+    "engineering and technology"
+  ],
+  "html": [
+    "computers and electronics"
+  ],
+  "css": [
+    "computers and electronics"
+  ],
+  "javascript": [
+    "computers and electronics"
+  ],
+  "react": [
+    "computers and electronics"
+  ],
+  "angular": [
+    "computers and electronics"
+  ],
+  "vue": [
+    "computers and electronics"
+  ],
+  "nodejs": [
+    "computers and electronics"
+  ],
+  "node.js": [
+    "computers and electronics"
+  ],
+  "django": [
+    "computers and electronics"
+  ],
+  "flask": [
+    "computers and electronics"
+  ],
+  "spring": [
+    "computers and electronics"
+  ],
+  "fastapi": [
+    "computers and electronics"
+  ],
+  "sql": [
+    "computers and electronics",
+    "mathematics"
+  ],
+  "mysql": [
+    "computers and electronics"
+  ],
+  "postgresql": [
+    "computers and electronics"
+  ],
+  "mongodb": [
+    "computers and electronics"
+  ],
+  "redis": [
+    "computers and electronics"
+  ],
+  "cassandra": [
+    "computers and electronics"
+  ],
+  "elasticsearch": [
+    "computers and electronics"
+  ],
+  "oracle": [
+    "computers and electronics"
+  ],
+  "sqlite": [
+    "computers and electronics"
+  ],
+  "data warehousing": [
+    "computers and electronics",
+    "mathematics"
+  ],
+  "etl": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "data analysis": [
+    "mathematics"
+  ],
+  "data science": [
+    "mathematics",
+    "computers and electronics"
+  ],
+  "data engineering": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "big data": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "machine learning": [
+    "mathematics",
+    "computers and electronics"
+  ],
+  "deep learning": [
+    "mathematics",
+    "computers and electronics"
+  ],
+  "neural networks": [
+    "mathematics",
+    "computers and electronics"
+  ],
+  "nlp": [
+    "mathematics",
+    "computers and electronics"
+  ],
+  "computer vision": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "statistics": [
+    "mathematics"
+  ],
+  "probability": [
+    "mathematics"
+  ],
+  "linear algebra": [
+    "mathematics"
+  ],
+  "pandas": [
+    "computers and electronics"
+  ],
+  "numpy": [
+    "mathematics"
+  ],
+  "scikit-learn": [
+    "mathematics",
+    "computers and electronics"
+  ],
+  "tensorflow": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "pytorch": [
+    "computers and electronics"
+  ],
+  "keras": [
+    "computers and electronics"
+  ],
+  "tableau": [
+    "mathematics"
+  ],
+  "power bi": [
+    "mathematics"
+  ],
+  "excel": [
+    "mathematics"
+  ],
+  "ms excel": [
+    "mathematics"
+  ],
+  "spark": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "hadoop": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "matplotlib": [
+    "mathematics"
+  ],
+  "aws": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "azure": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "gcp": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "google cloud": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "docker": [
+    "engineering and technology"
+  ],
+  "kubernetes": [
+    "engineering and technology"
+  ],
+  "terraform": [
+    "engineering and technology"
+  ],
+  "ansible": [
+    "engineering and technology"
+  ],
+  "jenkins": [
+    "engineering and technology"
+  ],
+  "ci/cd": [
+    "engineering and technology"
+  ],
+  "devops": [
+    "engineering and technology",
+    "computers and electronics"
+  ],
+  "linux": [
+    "computers and electronics"
+  ],
+  "unix": [
+    "computers and electronics"
+  ],
+  "bash": [
+    "computers and electronics"
+  ],
+  "cloud computing": [
+    "engineering and technology"
+  ],
+  "microservices": [
+    "engineering and technology",
+    "computers and electronics"
+  ],
+  "system design": [
+    "engineering and technology",
+    "computers and electronics"
+  ],
+  "api": [
+    "computers and electronics"
+  ],
+  "rest": [
+    "computers and electronics"
+  ],
+  "soap": [
+    "computers and electronics"
+  ],
+  "graphql": [
+    "computers and electronics"
+  ],
+  "postman": [
+    "computers and electronics"
+  ],
+  "cybersecurity": [
+    "public safety and security"
+  ],
+  "penetration testing": [
+    "public safety and security",
+    "computers and electronics"
+  ],
+  "network security": [
+    "public safety and security",
+    "telecommunications"
+  ],
+  "cryptography": [
+    "computers and electronics",
+    "mathematics"
+  ],
+  "siem": [
+    "public safety and security",
+    "computers and electronics"
+  ],
+  "vulnerability assessment": [
+    "public safety and security"
+  ],
+  "firewalls": [
+    "telecommunications",
+    "computers and electronics"
+  ],
+  "ethical hacking": [
+    "public safety and security",
+    "computers and electronics"
+  ],
+  "compliance": [
+    "computers and electronics"
+  ],
+  "business analysis": [
+    "administration and management"
+  ],
+  "business analyst": [
+    "administration and management"
+  ],
+  "systems analysis": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "requirements gathering": [
+    "administration and management"
+  ],
+  "requirements elicitation": [
+    "administration and management"
+  ],
+  "business requirements": [
+    "administration and management"
+  ],
+  "functional requirements": [
+    "computers and electronics"
+  ],
+  "use case": [
+    "computers and electronics"
+  ],
+  "user stories": [
+    "administration and management"
+  ],
+  "user story": [
+    "administration and management"
+  ],
+  "brd": [
+    "administration and management"
+  ],
+  "frd": [
+    "computers and electronics"
+  ],
+  "srs": [
+    "computers and electronics"
+  ],
+  "prd": [
+    "computers and electronics"
+  ],
+  "gap analysis": [
+    "administration and management"
+  ],
+  "impact analysis": [
+    "administration and management"
+  ],
+  "feasibility study": [
+    "administration and management"
+  ],
+  "swot analysis": [
+    "administration and management"
+  ],
+  "risk analysis": [
+    "administration and management"
+  ],
+  "cluster analysis": [
+    "mathematics"
+  ],
+  "root cause analysis": [
+    "administration and management"
+  ],
+  "process mapping": [
+    "administration and management"
+  ],
+  "change management": [
+    "personnel and human resources"
+  ],
+  "business intelligence": [
+    "mathematics",
+    "computers and electronics"
+  ],
+  "stakeholder management": [
+    "administration and management"
+  ],
+  "business process": [
+    "administration and management"
+  ],
+  "workflow analysis": [
+    "administration and management"
+  ],
+  "agile": [
+    "engineering and technology"
+  ],
+  "scrum": [
+    "engineering and technology"
+  ],
+  "scrum master": [
+    "personnel and human resources"
+  ],
+  "kanban": [
+    "engineering and technology"
+  ],
+  "scrumban": [
+    "engineering and technology"
+  ],
+  "safe": [
+    "engineering and technology"
+  ],
+  "scaled agile": [
+    "engineering and technology"
+  ],
+  "rup": [
+    "engineering and technology"
+  ],
+  "extreme programming": [
+    "engineering and technology"
+  ],
+  "sprint planning": [
+    "engineering and technology"
+  ],
+  "sprint backlog": [
+    "engineering and technology"
+  ],
+  "product backlog": [
+    "engineering and technology"
+  ],
+  "planning poker": [
+    "engineering and technology"
+  ],
+  "moscow method": [
+    "administration and management"
+  ],
+  "kano": [
+    "administration and management"
+  ],
+  "story points": [
+    "engineering and technology"
+  ],
+  "velocity": [
+    "engineering and technology"
+  ],
+  "retrospective": [
+    "personnel and human resources"
+  ],
+  "epic": [
+    "administration and management"
+  ],
+  "project management": [
+    "administration and management"
+  ],
+  "waterfall": [
+    "engineering and technology"
+  ],
+  "hybrid waterfall": [
+    "engineering and technology"
+  ],
+  "sdlc": [
+    "computers and electronics",
+    "engineering and technology"
+  ],
+  "program management": [
+    "administration and management"
+  ],
+  "risk management": [
+    "administration and management"
+  ],
+  "resource management": [
+    "personnel and human resources"
+  ],
+  "scheduling": [
+    "administration and management"
+  ],
+  "ms project": [
+    "administration and management"
+  ],
+  "jira": [
+    "computers and electronics"
+  ],
+  "confluence": [
+    "computers and electronics"
+  ],
+  "trello": [
+    "administration and management"
+  ],
+  "ms word": [
+    "computers and electronics"
+  ],
+  "ms powerpoint": [
+    "computers and electronics"
+  ],
+  "visio": [
+    "computers and electronics"
+  ],
+  "lucidchart": [
+    "computers and electronics"
+  ],
+  "sharepoint": [
+    "computers and electronics"
+  ],
+  "salesforce": [
+    "sales and marketing"
+  ],
+  "sap": [
+    "computers and electronics"
+  ],
+  "servicenow": [
+    "computers and electronics"
+  ],
+  "bloomberg": [
+    "computers and electronics"
+  ],
+  "aladdin": [
+    "computers and electronics"
+  ],
+  "charles river": [
+    "computers and electronics"
+  ],
+  "git": [
+    "computers and electronics"
+  ],
+  "github": [
+    "computers and electronics"
+  ],
+  "tfs": [
+    "computers and electronics"
+  ],
+  "team foundation server": [
+    "computers and electronics"
+  ],
+  "testing": [
+    "computers and electronics"
+  ],
+  "test cases": [
+    "computers and electronics"
+  ],
+  "test plan": [
+    "computers and electronics"
+  ],
+  "qa": [
+    "computers and electronics"
+  ],
+  "uat": [
+    "computers and electronics"
+  ],
+  "user acceptance testing": [
+    "computers and electronics"
+  ],
+  "regression testing": [
+    "computers and electronics"
+  ],
+  "selenium": [
+    "computers and electronics"
+  ],
+  "banking": [
+    "economics and accounting"
+  ],
+  "finance": [
+    "economics and accounting"
+  ],
+  "e-commerce": [
+    "sales and marketing"
+  ],
+  "trading systems": [
+    "computers and electronics"
+  ],
+  "financial analysis": [
+    "economics and accounting"
+  ],
+  "accounting": [
+    "economics and accounting"
+  ],
+  "networking": [
+    "telecommunications"
+  ],
+  "telecommunications": [
+    "telecommunications"
+  ],
+  "iot": [
+    "engineering and technology"
+  ],
+  "embedded systems": [
+    "engineering and technology"
+  ],
+  "android": [
+    "computers and electronics"
+  ],
+  "ios": [
+    "computers and electronics"
+  ],
+  "mobile development": [
+    "computers and electronics"
+  ],
+  "react native": [
+    "computers and electronics"
+  ],
+  "flutter": [
+    "computers and electronics"
+  ],
+  "communication": [
+    "customer and personal service"
+  ],
+  "leadership": [
+    "personnel and human resources"
+  ],
+  "teamwork": [
+    "personnel and human resources"
+  ],
+  "negotiation": [
+    "customer and personal service"
+  ],
+  "facilitation": [
+    "personnel and human resources"
+  ],
+  "presentation": [
+    "communications and media"
+  ],
+  "stakeholder communication": [
+    "administration and management"
+  ],
+  "offshore team management": [
+    "personnel and human resources"
+  ],
+  "analytical skills": [
+    "mathematics"
+  ],
+  "critical thinking": [
+    "mathematics"
+  ]
+}
